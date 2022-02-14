@@ -57,9 +57,13 @@ ul{
     .logo-box{
         display: flex;
     }
+    .logo-box .logo{
+        padding-top: 24px;
+        padding-bottom: 25px;
+    }
+
 .logo{
-    padding-top: 24px;
-    padding-bottom: 25px;
+
     color: #2196F3;
     font-family: Raleway, sans-serif;
     font-weight: 700;
@@ -116,6 +120,9 @@ margin-right: 50px;
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: #2F303A;
+}
+.footer .logo{
+    margin-bottom: 20px;
 }
 .logo-footer{
     color: #ffffff;
@@ -251,6 +258,13 @@ margin-right: 50px;
     margin-top: 0;
     margin-bottom: 50;
 }
+.our-work-list{
+    display: flex;
+}
+.our-work-list .item:not(:last-child){
+    margin-right: 30px;
+
+}
 /*========== TIAM ==========*/
 .team{
     padding-top: 94px;
@@ -259,9 +273,23 @@ margin-right: 50px;
 }
 .team-title{
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 50px;
 
 }
+.team-list{
+    display: flex;
+}
+
+.team-list .item{
+    margin-right: 30px;
+    width: 270px;
+}
+.team-list .item:nth-child(4n){
+    margin-right: 0;
+}
+
+
+
 .team-names{
     margin-top: 0;
     margin-bottom: 10px;
