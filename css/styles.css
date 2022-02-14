@@ -16,12 +16,50 @@ letter-spacing: 0.03em;
 }
 ul{
     list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.hides{
+    opacity: 0;
+    margin: 0;
+    padding: 0;
+    height: 0;
+    width: 0;
+}
+
+
+.contaniner{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    
 }
 /* ==========HEADER========== */
 .header{
+    display: flex;
+    align-items: center;
     background-color: #ffffff;
+
+    }
+    .main-nav{
+     display: flex;   
+    }
+    .site-nav{
+        margin-left: 93px;
+        display: flex;
+    }
+    .auth{
+        display: flex;
+        margin-left: auto;
+    }
+    .logo-box{
+        display: flex;
     }
 .logo{
+    padding-top: 24px;
+    padding-bottom: 25px;
     color: #2196F3;
     font-family: Raleway, sans-serif;
     font-weight: 700;
@@ -32,8 +70,17 @@ ul{
 .logo-header{
     color: #000000;
 }
+.site-nav .item:not(:last-child){
+margin-right: 50px;
+}
 
+.site-nav .header-link{
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
 .header-link{
+ 
     color: var(--title-text-color);
     font-weight: 500;
     font-size: 14px;
@@ -41,9 +88,13 @@ ul{
     letter-spacing: 0.02em;
     text-decoration: none;
 }
+
 .header-link:focus,
 .header-link:hover{
     color: var(--accent-color);
+}
+.auth .item:not(:last-child){
+    margin-right: 50px;
 }
 .auth-header{
     color: #757575;
@@ -62,10 +113,15 @@ ul{
 }
 /*========== FOOTER ==========*/
 .footer{
+    padding-top: 60px;
+    padding-bottom: 60px;
     background-color: #2F303A;
 }
 .logo-footer{
     color: #ffffff;
+}
+.logo.logo-footer{
+    margin-bottom: 20px;
 }
 .address{
     color: #ffffff;
@@ -90,13 +146,25 @@ ul{
 .footer-link:hover{
     color: var(--accent-color);
 }
+.address, .footer-link{
+    margin-bottom: 9px;
+}
 /*========== MAIN STUDIO==========*/
 
 /*========== HIRO ==========*/
 .hero{
+    padding-top: 200px;
+    padding-bottom: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1600px;
     background-color: #2F303A;
+    text-align: center;
+    
 }
 .hero-title{
+    margin-top: 0;
+    margin-bottom: 30px;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -104,18 +172,25 @@ ul{
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: #FFFFFF;
+    
 }
 .button{ 
+    display: inline-block;
+    border-radius: 4px;
+    padding: 10px 32px;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 200px;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
-    display: flex;
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
     color: #FFFFFF;
     cursor: pointer;
     background-color: var(--accent-color);
+    
 }
 .button:focus,
 .button:hover{
@@ -124,6 +199,10 @@ ul{
 
 /*========== SECTION ==========*/
 /*========== WORK==========*/
+.work{
+    padding-top: 94px;
+    padding-bottom: 94px;   
+}
 .heading{
     font-weight: 700;
     font-size: 36px;
@@ -131,23 +210,61 @@ ul{
     text-align: center;
     color: var(--title-text-color);
 }
+.work-list{
+    display: flex;
+    flex-wrap: wrap;
+}   
+.work-list .item{
+    width: 270px;
+    
+}
+    
+
+.work-list .item:not(:last-child){
+    margin-right: 30px;
+}
+
+
 .subheading{
+    margin-top: 0;
+    margin-bottom: 10px;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
     color: var(--title-text-color);
+    
 }
 .work-text{
+    margin-top: 0;
+    margin-bottom: 0;
     font-size: 14px;
     line-height: 1.71;
     color: var(--primary-text-color);
+    
+}
+/* ==========OUR-WORK========== */
+.our-work{
+    margin-bottom: 94px;
+}
+.our-work-title{
+    margin-top: 0;
+    margin-bottom: 50;
 }
 /*========== TIAM ==========*/
 .team{
+    padding-top: 94px;
+    padding-bottom: 94px;
     background-color: #F5F4FA;
 }
+.team-title{
+    margin-top: 0;
+    margin-bottom: 0;
+
+}
 .team-names{
+    margin-top: 0;
+    margin-bottom: 10px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
@@ -155,6 +272,8 @@ ul{
     color: var(--title-text-color);
 }
 .profession{
+    margin-top: 0;
+    margin-bottom: 30px;
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
