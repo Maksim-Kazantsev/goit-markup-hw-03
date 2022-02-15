@@ -119,16 +119,21 @@ margin-right: 50px;
 .footer{
     padding-top: 60px;
     padding-bottom: 60px;
+    padding-right: 215px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1600px;
     background-color: #2F303A;
 }
-.footer .logo{
-    margin-bottom: 20px;
+.footer-logo-link{
+margin-bottom: 20px;
 }
+
 .logo-footer{
     color: #ffffff;
 }
-.logo.logo-footer{
-    margin-bottom: 20px;
+.footer-logo-link .item:not(:last-child){
+    margin-bottom: 9px;
 }
 .address{
     color: #ffffff;
