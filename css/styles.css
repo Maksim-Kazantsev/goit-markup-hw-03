@@ -3,7 +3,7 @@
 --title-text-color: #212121;
 --accent-color: #2196F3;
 --address-text-color: rgba(255, 255, 255, 0.6);
---primary-backgroud-color: #E5E5E5;
+--primary-backgroud-color: #FFFFFF;
 }
 
 body{
@@ -28,7 +28,7 @@ ul{
 }
 
 
-.contaniner{
+.container{
     margin-left: auto;
     margin-right: auto;
     width: 1200px;
@@ -36,31 +36,42 @@ ul{
     padding-right: 15px;
     
 }
+.section{
+    padding-top: 94px;
+    padding-bottom: 94px;   
+}
 /* ==========HEADER========== */
 .header{
-    display: flex;
-    align-items: center;
     background-color: #ffffff;
+    border: 1px solid #ECECEC;
 
     }
-    .main-nav{
-     display: flex;   
+.header-box{
+    display: flex;
+    align-items: center;
+
+
     }
-    .site-nav{
-        margin-left: 93px;
-        display: flex;
-    }
-    .auth{
-        display: flex;
-        margin-left: auto;
-    }
-    .logo-box{
-        display: flex;
-    }
-    .logo-box .logo{
-        padding-top: 24px;
-        padding-bottom: 25px;
-    }
+.main-nav{
+    display: flex;   
+}
+.site-nav{
+    display: flex;
+    margin-left: 93px;
+   
+}
+.auth{
+    display: flex;
+    margin-left: auto;
+    
+}
+.logo-box{
+    display: flex;
+}
+.logo-box .logo{
+    padding-top: 24px;
+    padding-bottom: 25px;
+}
 
 .logo{
 
@@ -97,6 +108,7 @@ margin-right: 50px;
 .header-link:hover{
     color: var(--accent-color);
 }
+
 .auth .item:not(:last-child){
     margin-right: 50px;
 }
@@ -169,7 +181,6 @@ margin-bottom: 20px;
     padding-bottom: 200px;
     margin-left: auto;
     margin-right: auto;
-    /* width: 1600px; */
     background-color: #2F303A;
     text-align: center;
     
@@ -216,10 +227,7 @@ margin-bottom: 20px;
 
 /*========== SECTION ==========*/
 /*========== WORK==========*/
-.work{
-    padding-top: 94px;
-    padding-bottom: 94px;   
-}
+
 .heading{
     font-weight: 700;
     font-size: 36px;
@@ -262,7 +270,7 @@ margin-bottom: 20px;
 }
 /* ==========OUR-WORK========== */
 .our-work{
-    margin-bottom: 94px;
+    padding-top: 0;
 }
 .our-work-title{
     margin-top: 0;
@@ -276,11 +284,7 @@ margin-bottom: 20px;
 
 }
 /*========== TIAM ==========*/
-.team{
-    padding-top: 94px;
-    padding-bottom: 94px;
-    background-color: #F5F4FA;
-}
+
 .team-title{
     margin-top: 0;
     margin-bottom: 50px;
@@ -317,15 +321,9 @@ margin-bottom: 20px;
     text-align: center;
 }
 /*========== PORTFOLIO ==========*/
-.portfolio{
-padding-bottom: 94px;
-padding-top: 94px;
-background-color: #fff;
-}
 
 .buttons{ 
-    display: block;
-    margin-bottom: 50px;  
+    display: block;  
     font-weight: 500;
     font-size: 16px;
     line-height: 1.63;
@@ -361,9 +359,10 @@ background-color: #fff;
 .portfolio-link{
     text-decoration: none; 
 }
-.portfolio .list{
+.container .list{
     display: flex;
     justify-content: center;
+    margin-bottom: 34px;
 }
 .list .item:not(:last-child){
     margin-right: 30px;
@@ -376,10 +375,17 @@ background-color: #fff;
     width: 370px;
     margin-right: 30px;
     margin-bottom: 30px;
+    border-bottom:1px solid #EEEEEE;
+    
 }
 .item-of-cards:nth-child(3n){
     margin-right: 0;
 }
 .item-of-cards:nth-list-child(3n){
     margin-right: 0;
+}
+.portfolio-subheading,
+.portfolio-title {
+    padding-left: 24px;
+    padding-right: 24px;
 }
