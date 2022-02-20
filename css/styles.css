@@ -243,6 +243,10 @@ margin-right: 50px;
 .team-list .item:nth-child(4n){
     margin-right: 0;
 }
+.team-item{
+padding-top: 30px;
+padding-bottom: 30px;
+}
 .team-names{
     margin-top: 0;
     margin-bottom: 10px;
@@ -310,15 +314,13 @@ margin-right: 50px;
     margin-bottom: 0;
 }
 .list .item:not(:last-child){
-    margin-right: 52px;
+    margin-right: 8px;
 }
 /*========== CARDS TITLE==========*/
 .title-cards {
-    padding-left: 24px;
-    padding-right: 24px;
+    padding: 20px 24px;
 }
 .portfolio-subheading{
-    margin-top: 20px;
     margin-bottom: 4px;
     font-weight: 700;
     font-size: 18px;
@@ -328,7 +330,6 @@ margin-right: 50px;
 }
 .portfolio-title{
     margin-top: 0;
-    margin-bottom: 20px;
     font-size: 16px;
     line-height: 1.9;
     color: var(--primary-text-color);
