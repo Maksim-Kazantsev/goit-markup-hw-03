@@ -293,6 +293,9 @@ padding-bottom: 30px;
     color: #ffffff;
     background-color: var(--accent-color);
 }
+.list .item:not(:last-child){
+    margin-right: 8px;
+}
 /*========== CARDS==========*/
 .list-of-cards{
     display: flex;
@@ -313,14 +316,13 @@ padding-bottom: 30px;
 .item-of-cards:nth-last-child(-n + 3) {
     margin-bottom: 0;
 }
-.list .item:not(:last-child){
-    margin-right: 8px;
-}
+
 /*========== CARDS TITLE==========*/
 .title-cards {
     padding: 20px 24px;
 }
 .portfolio-subheading{
+    margin-top: 0;
     margin-bottom: 4px;
     font-weight: 700;
     font-size: 18px;
@@ -330,6 +332,7 @@ padding-bottom: 30px;
 }
 .portfolio-title{
     margin-top: 0;
+    margin-bottom: 0;
     font-size: 16px;
     line-height: 1.9;
     color: var(--primary-text-color);
